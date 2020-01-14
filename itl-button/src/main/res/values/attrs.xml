@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ITLButton">
+        <attr name="label" format="string" />
+        <attr name="label_color" format="color" />
+        <attr name="icon" format="reference" />
+        <attr name="icon_color" format="color" />
+        <attr name="icon_margin" format="dimension" />
+        <attr name="loading_style" format="reference" />
+        <attr name="loading" format="boolean" />
+        <attr name="checked" format="boolean" />
+    </declare-styleable>
+
+</resources>
