@@ -17,7 +17,7 @@ allprojects {
 
 # app build.gradle 
 ```
-ependencies {
+dependencies {
     ...
     implementation 'dev.hussein.itlbutton:itl-button:0.0.1'
 }
