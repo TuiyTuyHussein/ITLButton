@@ -44,6 +44,7 @@ class ITLButton @JvmOverloads constructor(
     private var labelColor: Int = 0
     var isLoading = false
     var isChecked = false
+    var showLabel = true
     private lateinit var textView: WeakReference<AppCompatTextView>
     private lateinit var imageView: WeakReference<AppCompatImageView>
     private lateinit var loadingView: WeakReference<AVLoadingIndicatorView>
@@ -101,6 +102,14 @@ class ITLButton @JvmOverloads constructor(
                         R.styleable.ITLButton_checked,
                         isChecked
                     )
+
+                if (hasValue(R.styleable.ITLButton_show_label))
+                    showLabel = getBoolean(
+                        R.styleable.ITLButton_show_label,
+                        showLabel
+                    )
+
+
                 recycle()
                 setupViews()
             }
@@ -124,6 +133,7 @@ class ITLButton @JvmOverloads constructor(
                     text = label
                     setTypeface(typeface, Typeface.BOLD)
                     setTextColor(labelColor)
+                    visibility = if (showLabel) View.VISIBLE else View.GONE
                 })
                 addView(
                     imageView.get(),

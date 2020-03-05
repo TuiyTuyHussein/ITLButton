@@ -3,6 +3,7 @@
 
     <declare-styleable name="ITLButton">
         <attr name="label" format="string" />
+        <attr name="show_label" format="boolean" />
         <attr name="label_color" format="color" />
         <attr name="icon" format="reference" />
         <attr name="icon_color" format="color" />

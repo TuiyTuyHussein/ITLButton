@@ -30,8 +30,7 @@
                 app:icon_color="@color/like_state"
                 app:icon_margin="@dimen/margin"
                 app:label="@string/like"
-                app:label_color="@color/action_text"
-                app:loading_style="@style/AVLoadingIndicatorStyle" />
+                app:label_color="@color/action_text" />
 
 
             <Space
@@ -48,6 +47,7 @@
                 app:icon_color="@color/action_icon"
                 app:icon_margin="@dimen/margin"
                 app:label="@string/share"
+                app:show_label="false"
                 app:label_color="@color/action_text"
                 app:loading_style="@style/AVLoadingIndicatorStyle" />
 
