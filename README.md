@@ -17,6 +17,6 @@ allprojects {
 ```
 dependencies {
     ...
-    implementation 'dev.hussein.itlbutton:itl-button:0.0.1'
+    implementation 'dev.hussein.itlbutton:itl-button:0.0.2'
 }
 ```
